@@ -1,0 +1,1 @@
+class PostException extends Exception{}
