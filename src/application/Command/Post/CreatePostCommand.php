@@ -1,5 +1,3 @@
-//Adapter. Concrete implementation of a port
-
 class CreastePostCommand implements CommandInterface
 {
 	private $title;
