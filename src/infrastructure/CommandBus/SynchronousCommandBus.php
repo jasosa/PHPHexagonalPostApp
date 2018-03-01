@@ -20,7 +20,7 @@ class SynchronousCommandBus implements CommandBusInterface
 
 	public function register($commandName, CommandHandlerInterface $command)
     {
-        $this->handlers[$commandName] = $handler;
+        $this->handlers[$commandName] = $command;
 
         return $this;
     }

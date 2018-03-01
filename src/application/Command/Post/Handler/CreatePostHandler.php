@@ -2,6 +2,7 @@
 //Adapter. Concrete implementation of the CommandHandlerInterface that wraps around another port (repository interface)
 
 include(dirname(__FILE__)  . "/../../CommandHandlerInterface.php");
+include(dirname(__FILE__)  . "/../../../../domain/Post/Post.php");
 
 class CreatePostHandler implements CommandHandlerInterface
 {
@@ -9,7 +10,7 @@ class CreatePostHandler implements CommandHandlerInterface
 
     public function __construct(PostRepositoryInterface $postRepository)
     {
-        $this->postRepository = $postRepository;
+        $this->postRepository = $postRepository;        
     }
 
     public function handle(CommandInterface $command)
