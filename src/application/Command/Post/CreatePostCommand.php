@@ -1,4 +1,8 @@
-class CreastePostCommand implements CommandInterface
+<?php
+
+include(dirname(__FILE__)  . "/../CommandInterface.php");
+
+class CreatePostCommand implements CommandInterface
 {
 	private $title;
 	private $contents;
@@ -19,3 +23,5 @@ class CreastePostCommand implements CommandInterface
 		return $this->contents;
 	}
 }
+
+?>

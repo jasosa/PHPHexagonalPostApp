@@ -1,3 +1,7 @@
+ <?php
+
+include(dirname(__FILE__)  . "/../../application/Command/CommandBusInterface.php");
+
 class SynchronousCommandBus implements CommandBusInterface
 {
 	/* @var CommandHandlerInterface[] */
@@ -7,7 +11,7 @@ class SynchronousCommandBus implements CommandBusInterface
 	{
 		$commandName = get_class($command);
 
-		if (!array_key_exists($commandName, $this->handlers) {
+		if (!array_key_exists($commandName, $this->handlers)) {
             throw new Exception("{$commandName} is not supported by the SynchronousCommandBus.");
         }
 
@@ -21,3 +25,5 @@ class SynchronousCommandBus implements CommandBusInterface
         return $this;
     }
 }
+
+

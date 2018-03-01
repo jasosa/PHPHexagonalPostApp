@@ -1,3 +1,7 @@
+<?php
+
+include(dirname(__FILE__)  . "/../../domain/Post/PostRepositoryInterface.php");
+
 class PostRepository implements PostRepositoryInterface  
 {
     public $posts = [];

@@ -1,4 +1,7 @@
+<?php
 //Adapter. Concrete implementation of the CommandHandlerInterface that wraps around another port (repository interface)
+
+include(dirname(__FILE__)  . "/../../CommandHandlerInterface.php");
 
 class CreatePostHandler implements CommandHandlerInterface
 {

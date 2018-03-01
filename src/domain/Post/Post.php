@@ -1,3 +1,5 @@
+<?php
+
 class Post
 {
 	public $id;
