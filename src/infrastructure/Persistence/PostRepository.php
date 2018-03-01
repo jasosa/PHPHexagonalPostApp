@@ -13,4 +13,9 @@ class PostRepository implements PostRepositoryInterface
         // Obviously, this is for testing purposes only
         echo "Post with id {$post->id} was created.";
     }
+
+    public function getPosts()
+    {
+		return $this->posts;
+    }
 }

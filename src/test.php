@@ -19,4 +19,6 @@ $command = new CreatePostCommand(
 
 $commandBus->execute($command);
 
+//echo "\r\n" count($postRepository->getPosts());
+
 ?>
